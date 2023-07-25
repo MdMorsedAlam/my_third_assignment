@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst ! Landing Page Website</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <!-- Google Lato Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,10 +42,12 @@
     <header class="container mx-auto">
       <!-- Nav Section -->
       <nav>
-        <div class="navbar bg-bg-main rounded-full px-8">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <label tabindex="0" class="btn text-white btn-ghost lg:hidden">
+        <div
+          class="flex bg-bg-main rounded-full flex-row-reverse text-center lg:flex-row justify-between items-center py-2 px-5"
+        >
+          <div class="relative">
+            <div class="dropdown lg:hidden">
+              <label tabindex="0" class="btn text-white btn-ghost">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5"
@@ -63,42 +65,53 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg-main rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg-main rounded-box w-52  absolute right-0 top-10"
               >
-                <li class="text-white text-lg font-normal w-5"><a>Home</a></li>
-                <li class="text-white text-lg font-normal w-5">
+                <li class="text-white text-lg font-normal"><a>Home</a></li>
+                <li class="text-white text-lg font-normal">
                   <a>About Us</a>
                 </li>
-                <li class="text-white text-lg font-normal w-5"><a>Shop</a></li>
-                <li class="text-white text-lg font-normal w-5">
+                <li class="text-white text-lg font-normal"><a>Shop</a></li>
+                <li class="text-white text-lg font-normal">
                   <a>All Fruits</a>
                 </li>
               </ul>
             </div>
+
             <div class="hidden lg:flex justify-between items-center">
               <ul class="menu menu-horizontal px-1">
-                <li class="text-white text-base font-normal"><a>Home</a></li>
-                <li class="text-white text-base font-normal"><a>About Us</a></li>
-                <li class="text-white font-normal text-base"><a>Shop</a></li>
-                <li class="text-white font-normal text-base">
+                <li class="text-white text-lg font-normal"><a>Home</a></li>
+                <li class="text-white text-lg font-normal">
+                  <a>About Us</a>
+                </li>
+                <li class="text-white font-normal text-lg"><a>Shop</a></li>
+                <li class="text-white font-normal text-lg">
                   <a>All Fruits</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="navbar-center flex justify-center items-center gap-2">
-            <a href=""
-              ><img class="h-12 w-12" src="./images/logo.png" alt="logo.png"
-            /></a>
-            <a class="text-4xl text-white font-bold">Fruit Burst</a>
+          <div>
+            <div class="flex justify-center items-center gap-2">
+              <a href=""
+                ><img class="h-12 w-12" src="./images/logo.png" alt="logo.png"
+              /></a>
+              <a class="text-4xl text-white font-bold">Fruit Burst</a>
+            </div>
           </div>
-          <div class="navbar-end relative">
-            <input
-              type="text"
-              placeholder="Type here"
-              class="py-2 px-4 rounded-full w-1/2 hidden lg:block"
-            />
-            <img class="absolute top-2 right-4 hidden lg:block" src="./images/search-icon.png" alt="search-icon.png">
+          <div class="hidden lg:block">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Type here"
+                class="py-2 px-4 rounded-full"
+              />
+              <img
+                class="absolute top-2 right-4 hidden lg:block"
+                src="./images/search-icon.png"
+                alt="search-icon.png"
+              />
+            </div>
           </div>
         </div>
       </nav>
