@@ -43,9 +43,9 @@
       <!-- Nav Section -->
       <nav>
         <div
-          class="flex bg-bg-main rounded-full flex-row-reverse text-center lg:flex-row justify-between items-center py-2 px-5"
+          class="flex bg-bg-main rounded-full flex-row-reverse lg:flex-row justify-between items-center py-2 px-5"
         >
-          <div class="relative">
+          <div class="relative lg:flex-1">
             <div class="dropdown lg:hidden">
               <label tabindex="0" class="btn text-white btn-ghost">
                 <svg
@@ -65,7 +65,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg-main rounded-box w-52  absolute right-0 top-10"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg-main rounded-box w-52 absolute right-0 top-10"
               >
                 <li class="text-white text-lg font-normal"><a>Home</a></li>
                 <li class="text-white text-lg font-normal">
@@ -79,35 +79,39 @@
             </div>
 
             <div class="hidden lg:flex justify-between items-center">
-              <ul class="menu menu-horizontal px-1">
-                <li class="text-white text-lg font-normal"><a>Home</a></li>
-                <li class="text-white text-lg font-normal">
-                  <a>About Us</a>
+              <ul class="flex justify-between gap-6">
+                <li class="text-white text-lg font-normal px-3 py-1 hover:bg-[#E25055] hover:text-black rounded-lg">
+                  <a href="">Home</a>
                 </li>
-                <li class="text-white font-normal text-lg"><a>Shop</a></li>
-                <li class="text-white font-normal text-lg">
-                  <a>All Fruits</a>
+                <li class="text-white text-lg font-normal px-3 py-1 hover:bg-[#E25055] hover:text-black rounded-lg">
+                  <a href="">About Us</a>
+                </li>
+                <li class="text-white font-normal text-lg px-3 py-1 hover:bg-[#E25055] hover:text-black rounded-lg">
+                  <a href="">Shop</a>
+                </li>
+                <li class="text-white font-normal text-lg px-3 py-1 hover:bg-[#E25055] hover:text-black rounded-lg">
+                  <a href="">All Fruits</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div>
+          <div class="lg:flex-1">
             <div class="flex justify-center items-center gap-2">
               <a href=""
                 ><img class="h-12 w-12" src="./images/logo.png" alt="logo.png"
               /></a>
-              <a class="text-4xl text-white font-bold">Fruit Burst</a>
+              <a href="" class="text-4xl text-white font-bold">Fruit Burst</a>
             </div>
           </div>
-          <div class="hidden lg:block">
-            <div class="relative">
+          <div class="hidden lg:block lg:flex-1">
+            <div class="relative flex justify-end">
               <input
                 type="text"
                 placeholder="Type here"
-                class="py-2 px-4 rounded-full"
+                class="py-2 px-4 rounded-full w-3/4 focus:outline-none"
               />
               <img
-                class="absolute top-2 right-4 hidden lg:block"
+                class="absolute top-2 right-4 hidden lg:block cursor-pointer"
                 src="./images/search-icon.png"
                 alt="search-icon.png"
               />
