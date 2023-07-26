@@ -46,14 +46,14 @@
         background-color: #d32427;
         border-radius: 8px;
       }
-      #day-after::after{
-  content: ":";
-  font-size: 50px;
-  color: rgb(29, 25, 25);
-  font-weight: bold;
-  position: absolute;
-  right:-17px;
-  top:-19px;
+      #day-after::after {
+        content: ":";
+        font-size: 50px;
+        color: rgb(29, 25, 25);
+        font-weight: bold;
+        position: absolute;
+        right: -17px;
+        top: -19px;
       }
     </style>
   </head>
@@ -150,7 +150,9 @@
         </div>
       </nav>
       <!-- Banner Section -->
-      <div class="carousel max-w-screen-xl mx-auto h-[350px] md:h-[500px] rounded-lg">
+      <div
+        class="carousel max-w-screen-xl mx-auto h-[350px] md:h-[500px] rounded-lg"
+      >
         <!-- Slide 1 -->
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./images/banner1.png" class="w-full h-full" />
@@ -268,7 +270,6 @@
                   <span style="--value: 15"></span>
                 </span>
                 days
-               
               </div>
               <div id="day-after" class="flex flex-col relative">
                 <span class="countdown font-mono text-5xl">
@@ -1092,11 +1093,13 @@
           class="flex justify-between flex-col lg:flex-row items-center py-5"
         >
           <!-- first item -->
-          <div class="flex flex-col p-5 flex-1">
+          <div class="flex flex-col p-5 text-center md:text-left flex-1">
             <!-- 1box -->
-            <div class="flex flex-row justify-center gap-4">
+            <div
+              class="flex flex-col items-center md:flex-row justify-center gap-4"
+            >
               <img
-                class="h-14 w-16 bg-base-200 p-4 rounded-full"
+                class="h-14 w-14 bg-base-200 p-4 rounded-full"
                 src="./images/group1.png"
                 alt=""
               />
@@ -1104,7 +1107,7 @@
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   Dedicated Team
                 </h4>
-                <hr class="w-1/3 border my-3" />
+                <hr class="w-1/3 border my-3 md:ml-0 items-center ml-[130px]" />
                 <p class="text-base font-normal text-p-color">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -1112,9 +1115,11 @@
               </div>
             </div>
             <!-- box2 -->
-            <div class="flex flex-row justify-center gap-4 py-4">
+            <div
+              class="flex items-center md:items-start flex-col md:flex-row justify-center gap-4 py-4"
+            >
               <img
-                class="h-14 w-16 bg-base-200 p-4 rounded-full"
+                class="h-14 w-14 bg-base-200 p-4 rounded-full"
                 src="./images/love1.png"
                 alt=""
               />
@@ -1122,7 +1127,7 @@
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   Fresh is Best
                 </h4>
-                <hr class="w-1/3 border my-3" />
+                <hr class="w-1/3 border my-3 md:ml-0 ml-[130px]" />
                 <p class="text-base font-normal text-p-color">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -1130,9 +1135,11 @@
               </div>
             </div>
             <!-- box3 -->
-            <div class="flex flex-row justify-center gap-4">
+            <div
+              class="flex items-center md:items-start flex-col md:flex-row justify-center gap-4"
+            >
               <img
-                class="h-14 w-16 bg-base-200 p-4 rounded-full"
+                class="h-14 w-14 bg-base-200 p-4 rounded-full"
                 src="./images/gift-box1.png"
                 alt=""
               />
@@ -1140,7 +1147,7 @@
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   Gift Certificates
                 </h4>
-                <hr class="w-1/3 border my-3" />
+                <hr class="w-1/3 border my-3 md:ml-0 ml-[130px]" />
                 <p class="text-base font-normal text-p-color">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
@@ -1150,58 +1157,66 @@
           </div>
 
           <!-- Second Item -->
-          <div class="flex-1"><img src="./images/whychoose1.png" alt="" /></div>
+          <div class="flex-1 p-4 order-[-1] md:-order-none">
+            <img src="./images/whychoose1.png" alt="" />
+          </div>
           <!-- Third item -->
-          <div class="flex flex-col p-5 flex-1">
+          <div class="flex flex-col p-5 text-center md:text-left flex-1">
             <!-- 1box -->
-            <div class="flex flex-row-reverse justify-center gap-4">
+            <div
+              class="flex flex-col md:flex-row-reverse justify-center text-center items-center gap-4 py-4"
+            >
               <img
-                class="h-14 w-16 bg-base-200 p-4 rounded-full"
+                class="h-14 w-14 bg-base-200 p-4 rounded-full"
                 src="./images/fruit-icon.png"
                 alt="fruit-icon.png"
               />
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   Integrated Supplier
                 </h4>
-                <hr class="w-1/3 border my-3" />
-                <p class="text-base font-normal text-p-color text-right">
+                <hr class="w-1/3 border my-3 md:ml-0 ml-[130px]" />
+                <p class="text-base font-normal text-p-color md:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- box2 -->
-            <div class="flex flex-row-reverse justify-center gap-4 py-4">
+            <div
+              class="flex flex-col md:flex-row-reverse justify-center items-center text-center gap-4 py-4"
+            >
               <img
                 class="h-14 w-16 bg-base-200 p-4 rounded-full"
                 src="./images/ice-cream1.png"
                 alt="ice-cream1.png"
               />
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   Sustainable Practice
                 </h4>
-                <hr class="w-1/3 border my-3" />
-                <p class="text-base font-normal text-p-color text-right">
+                <hr class="w-1/3 border my-3 md:ml-0 ml-[130px]" />
+                <p class="text-base font-normal text-p-color md:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
               </div>
             </div>
             <!-- box3 -->
-            <div class="flex flex-row-reverse justify-center gap-4">
+            <div
+              class="flex flex-col items-center text-center md:flex-row-reverse justify-center gap-4"
+            >
               <img
-                class="h-14 w-16 bg-base-200 p-4 rounded-full"
+                class="h-14 w-14 bg-base-200 p-4 rounded-full"
                 src="./images/like1.png"
                 alt="like1.png"
               />
-              <div class="flex flex-col items-end">
+              <div class="flex flex-col md:items-end">
                 <h4 class="text-2xl text-h-color font-black pb-2">
                   The Benefits Only
                 </h4>
-                <hr class="w-1/3 border my-3" />
-                <p class="text-base font-normal text-p-color text-right">
+                <hr class="w-1/3 border my-3 md:ml-0 ml-[130px]" />
+                <p class="text-base font-normal text-p-color md:text-right">
                   Professional employees are there for you to pick the most
                   amazing and fresh fruits.
                 </p>
@@ -1224,12 +1239,18 @@
           </div>
           <!-- Importent links -->
           <div>
-            <ul class="grid text-center gap-3 items-center grid-cols-3 lg:grid-cols-6 mt-5">
-              <li class="text-white font-bold text-base"><a href="">Home</a></li>
+            <ul
+              class="grid text-center gap-3 items-center grid-cols-3 lg:grid-cols-6 mt-5"
+            >
+              <li class="text-white font-bold text-base">
+                <a href="">Home</a>
+              </li>
               <li class="text-white font-bold text-base">
                 <a href="">About Us</a>
               </li>
-              <li class="text-white font-bold text-base"><a href="">Shop</a></li>
+              <li class="text-white font-bold text-base">
+                <a href="">Shop</a>
+              </li>
               <li class="text-white font-bold text-base">
                 <a href="">All Fruits</a>
               </li>
@@ -1241,25 +1262,46 @@
               </li>
             </ul>
           </div>
-             <!-- Social links -->
-             <div>
-              <ul class="grid text-center items-center grid-cols-3 lg:grid-cols-6 mt-6 gap-4">
-                <li class="text-white font-bold text-base"><a href=""><img class="h-8 w-8" src="./images/facebook1.png" alt="facebook1.png"></a></li>
-                <li class="text-white font-bold text-base">
-                  <a href=""><img class="h-8 w-10" src="./images/twitter1.png" alt=""></a>
-                </li>
-                <li class="text-white font-bold text-base"><a href=""><img class="h-8 w-10" src="./images/youtube1.png" alt=""></a></li>
-                <li class="text-white font-bold text-base">
-                  <a href=""><img class="h-8 w-8" src="./images/linkedin1.png" alt=""></a>
-                </li>
-                <li class="text-white font-bold text-base">
-                  <a href=""><img class="h-8 w-18" src="./images/instagram1.png" alt=""></a>
-                </li>
-                <li class="text-white font-bold text-base">
-                  <a href=""><img class="h-8 w-8" src="./images/apple1.png" alt=""></a>
-                </li>
-              </ul>
-            </div>
+          <!-- Social links -->
+          <div>
+            <ul
+              class="grid text-center items-center grid-cols-3 lg:grid-cols-6 mt-6 gap-4"
+            >
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img
+                    class="h-8 w-8"
+                    src="./images/facebook1.png"
+                    alt="facebook1.png"
+                /></a>
+              </li>
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img class="h-8 w-10" src="./images/twitter1.png" alt=""
+                /></a>
+              </li>
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img class="h-8 w-10" src="./images/youtube1.png" alt=""
+                /></a>
+              </li>
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img class="h-8 w-8" src="./images/linkedin1.png" alt=""
+                /></a>
+              </li>
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img class="h-8 w-18" src="./images/instagram1.png" alt=""
+                /></a>
+              </li>
+              <li class="text-white font-bold text-base">
+                <a href=""
+                  ><img class="h-8 w-8" src="./images/apple1.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
